@@ -22,6 +22,20 @@
 
 - https://github.com/hairrrrr/Algorithm
 
+
+
+### 导航
+
+| 章节          | 案例 | 练习 | [作业 ](https://github.com/hairrrrr/DataStructure/tree/master/HomeWork) ::computer_mouse: |
+| ------------- | ---- | ---- | ------------------------------------------------------------ |
+| 第二章 线性表 |      |      | 字母的插入删除                                               |
+|               |      |      | 集合的并，交，差集运算                                       |
+|               |      |      |                                                              |
+
+
+
+
+
 ### 相关资料推荐
 
 [B 站严奶奶的视频](https://www.bilibili.com/video/BV1ns411r7Cn?p=4)
