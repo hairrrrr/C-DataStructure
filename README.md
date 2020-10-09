@@ -28,11 +28,22 @@
 
 推荐在正式学习之前先看看下面的注意一节
 
-| 章节          | 案例 | 练习 | [作业 ](https://github.com/hairrrrr/DataStructure/tree/master/HomeWork) ::computer_mouse: |
-| ------------- | ---- | ---- | ------------------------------------------------------------ |
-| 第二章 线性表 |      |      | 字母的插入删除                                               |
-|               |      |      | 集合的并，交，差集运算                                       |
-|               |      |      |                                                              |
+练习 一栏中只展示个人认为比较好的题目，更详细的列表请戳链接（练习）
+
+作业 一栏中题目的完整描述请戳链接（作业）
+
+| 章节          | 案例                                            | [练习]() ::1st_place_medal: | [作业 ](https://github.com/hairrrrr/DataStructure/tree/master/HomeWork) ::computer_mouse: |
+| ------------- | ----------------------------------------------- | --------------------------- | ------------------------------------------------------------ |
+| 第二章 线性表 | [合并线性表（2.1 2.2）]()                       |                             | 字母的插入删除                                               |
+|               | [线性表的顺序表示和实现（2.4 ~ 2.7）]()         |                             | 集合的并，交，差集运算                                       |
+|               | [线性表的链式表示和实现（2.8 ~ 2.12）]()        |                             |                                                              |
+|               | [静态链表表示和实现（2.13 ~ 2.17）]()           |                             |                                                              |
+|               | [循环链表的表示]()                              |                             |                                                              |
+|               | [双向链表的表示和实现]()                        |                             |                                                              |
+|               | [链表综合（2.20 2.21）]()                       |                             |                                                              |
+|               | [一元多项式的表示及相加（相乘）（2.22 2.23）]() |                             |                                                              |
+|               |                                                 |                             |                                                              |
+|               |                                                 |                             |                                                              |
 
 
 
@@ -40,19 +51,21 @@
 
 这一节我会说明我对于本书某些部分的理解和个人的编码习惯，方便大家更好的理解我的代码。
 
-#### 01. 引用 & 是什么？它和指针有什么区别？
+#### 01 引用 & 是什么？它和指针有什么区别？
 
 上数据结构的第一次课看课本时，我就注意到了似乎作者喜欢向函数传递引用。比如算法 2.1 中：
 
 ```c
-void union(List& La, List Lb)
+void union(List* La, List* Lb)
 {
     La_len = ListLength(La);
     Lb_len = ListLength(Lb);
-    for(i = 0; i <= Lb.len; i++)
+    for(i = 1; i <= Lb.len; i++)
+    {
         GetElem(Lb, i, e);
-    if(!LocateElem(La, e, Equal))
-        ListInsert(La, ++La_len, e);
+        if(!LocateElem(La, e, Equal))
+        	ListInsert(La, ++La_len, e);
+    }
 }
 ```
 
@@ -101,10 +114,12 @@ void union(List* La, List* Lb)
 {
     La_len = ListLength(La);
     Lb_len = ListLength(Lb);
-    for(i = 0; i <= Lb.len; i++)
-        GetElem(Lb, i, e);
-    if(!LocateElem(La, e, Equal))
-        ListInsert(La, ++La_len, e);
+    for(i = 1; i <= Lb.len; i++)
+    {
+        GetElem(Lb, i, &e);
+        if(!LocateElem(La, e, Equal))
+        	ListInsert(La, ++La_len, e);
+    }
 }
 ```
 
@@ -125,6 +140,81 @@ void union(List* La, const List* Lb);
 ```
 
 `const `保证 Lb 指向的内容不被 `union` 函数修改。
+
+
+
+#### 03 是否使用头节点
+
+我个人喜欢使用头节点，原因是在插入和删除节点时不需要考虑是否是头插/头删的问题：
+
+```c
+// 删除值为 val 的节点
+
+// 无头节点 
+// 可能要更改 first 要传入 first 的地址，指针类型为 List**
+void del_no_head(List** first, ElemType val)
+{
+    List* cur = *first;
+    List* prev = cur;
+    while(cur)
+    {
+        if(cur->_data == val)
+        {
+            // 如果是头删，需要更改链表的头
+            if(cur == *first)
+            {
+                // 头节点向后移动
+                *first = (*first)->_next;
+                free(cur);
+                cur = *first;
+                prev = cur;
+            }
+            else 
+            {
+                prev->_next = cur->_next;
+                free(cur);
+                cur = prev->next;
+            }
+        }
+        else
+        {
+            prev = cur;
+            cur = cur->_next;
+        }
+    }
+}
+
+// 有头节点
+void del_has_head(List* head, ElemType val)
+{
+    List* cur = head->_next;
+    // 将 prev 初始化为 头节点
+    List* prev = head;
+    while(cur)
+    {
+        // 不需要单独考虑删除头节点
+        if(cur->_data == val)
+        {
+            prev->_next = cur->_next;
+            free(cur);
+            cur = prev->next;
+        }
+        else
+        {
+            prev = cur;
+            cur = cur->_next;
+        }
+    }
+}
+```
+
+
+
+#### 04 关于头节点的传参
+
+[关于链表表头传参问题](https://www.cctechblog.cn/_posts/2020-04-19-%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8%E7%9A%84%E8%A1%A8%E5%A4%B4%E4%BC%A0%E5%8F%82/)
+
+
 
 ### 相关资料推荐
 
