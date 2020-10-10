@@ -36,8 +36,8 @@
 | ------------- | ------------------------------------------------------------ | --------------------------- | ------------------------------------------------------------ |
 | 第二章 线性表 | [合并线性表（2.1 2.2）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-1_2-2.md) |                             | 字母的插入删除                                               |
 |               | [线性表的顺序表示和实现（2.4 ~ 2.7）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-3_2-7.md) |                             | 集合的并，交，差集运算                                       |
-|               | [线性表的链式表示和实现（2.8 ~ 2.12）]()                     |                             |                                                              |
-|               | [静态链表表示和实现（2.13 ~ 2.17）]()                        |                             |                                                              |
+|               | [线性表的链式表示和实现（2.8 ~ 2.12）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-8-2_2-12.md) |                             |                                                              |
+|               | [静态链表表示和实现（2.13 ~ 2.17）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-13_2-17.md) |                             |                                                              |
 |               | [循环链表的表示]()                                           |                             |                                                              |
 |               | [双向链表的表示和实现]()                                     |                             |                                                              |
 |               | [链表综合（2.20 2.21）]()                                    |                             |                                                              |
