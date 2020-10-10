@@ -18,7 +18,7 @@ typedef struct node
 /*
  * 初始化链表
  */
-Status linked_list_init(llist_node_t* head);
+Status linked_list_init(llist_node_t** head);
 
 /*
  * 在第 pos 个节点前增加节点
@@ -38,7 +38,7 @@ void linked_list_print(llist_node_t* head);
 /*
  * 销毁链表
  */
-void linked_list_destroy(llist_node_t* head);
+void linked_list_destroy(llist_node_t** head);
 
 #endif
 
