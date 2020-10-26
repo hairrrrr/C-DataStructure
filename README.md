@@ -32,18 +32,18 @@
 
 作业 一栏中题目的完整描述请戳链接（作业）
 
-| 章节          | 案例                                                         | [练习]() ::1st_place_medal: | [作业 ](https://github.com/hairrrrr/DataStructure/tree/master/HomeWork) ::computer_mouse: |
-| ------------- | ------------------------------------------------------------ | --------------------------- | ------------------------------------------------------------ |
-| 第二章 线性表 | [合并线性表（2.1 2.2）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-1_2-2.md) |                             | 字母的插入删除                                               |
-|               | [线性表的顺序表示和实现（2.4 ~ 2.7）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-3_2-7.md) |                             | 集合的并，交，差集运算                                       |
-|               | [线性表的链式表示和实现（2.8 ~ 2.12）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-8-2_2-12.md) |                             |                                                              |
-|               | [静态链表表示和实现（2.13 ~ 2.17）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-13_2-17.md) |                             |                                                              |
-|               | [循环链表的表示]()                                           |                             |                                                              |
-|               | [双向链表的表示和实现]()                                     |                             |                                                              |
-|               | [链表综合（2.20 2.21）]()                                    |                             |                                                              |
-|               | [一元多项式的表示及相加（相乘）（2.22 2.23）]()              |                             |                                                              |
-|               |                                                              |                             |                                                              |
-|               |                                                              |                             |                                                              |
+| 章节            | 案例                                                         | [练习]() ::1st_place_medal: | [作业 ](https://github.com/hairrrrr/DataStructure/tree/master/HomeWork) ::computer_mouse: |
+| --------------- | ------------------------------------------------------------ | --------------------------- | ------------------------------------------------------------ |
+| 第二章 线性表   | [合并线性表（2.1 2.2）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-1_2-2.md) |                             | 字母的插入删除                                               |
+|                 | [线性表的顺序表示和实现（2.4 ~ 2.7）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-3_2-7.md) |                             | 集合的并，交，差集运算                                       |
+|                 | [线性表的链式表示和实现（2.8 ~ 2.12）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-8-2_2-12.md) |                             |                                                              |
+|                 | [静态链表表示和实现（2.13 ~ 2.17）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-13_2-17.md) |                             |                                                              |
+|                 | [循环链表的表示]()                                           |                             |                                                              |
+|                 | [双向链表的表示和实现]()                                     |                             |                                                              |
+|                 | [链表综合（2.20 2.21）]()                                    |                             |                                                              |
+|                 | [一元多项式的表示及相加（相乘）（2.22 2.23）]()              |                             |                                                              |
+| 第三章 栈和队列 | [栈的表示和实现]()                                           |                             |                                                              |
+|                 | [数制转换]()                                                 |                             |                                                              |
 
 
 
@@ -213,6 +213,10 @@ void del_has_head(List* head, ElemType val)
 #### 04 关于头节点的传参
 
 [关于链表表头传参问题](https://www.cctechblog.cn/_posts/2020-04-19-%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8%E7%9A%84%E8%A1%A8%E5%A4%B4%E4%BC%A0%E5%8F%82/)
+
+
+
+
 
 
 
