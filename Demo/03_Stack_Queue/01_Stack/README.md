@@ -2,7 +2,7 @@
 
 ### 一 顺序存储表示和实现
 
-![](../../../Pic/SqStack.jpg)
+![](https://hairrrrr.github.io/assets/2020-10-26-1.jpg)
 
 
 
