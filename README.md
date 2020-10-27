@@ -39,11 +39,11 @@
 |                 | [线性表的链式表示和实现（2.8 ~ 2.12）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-8-2_2-12.md) |                             |                                                              |
 |                 | [静态链表表示和实现（2.13 ~ 2.17）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-13_2-17.md) |                             |                                                              |
 |                 | [循环链表的表示]()                                           |                             |                                                              |
-|                 | [双向链表的表示和实现]()                                     |                             |                                                              |
+|                 | [双向循环链表的表示和实现]()                                 |                             |                                                              |
 |                 | [链表综合（2.20 2.21）]()                                    |                             |                                                              |
-|                 | [一元多项式的表示及相加（相乘）（2.22 2.23）]()              |                             |                                                              |
+|                 | [一元多项式的表示及相加（相乘）（2.22 2.23）](https://github.com/hairrrrr/DataStructure/blob/master/Demo/02_Linear_list/2-22_2-23.md) |                             |                                                              |
 | 第三章 栈和队列 | [栈的表示和实现](https://github.com/hairrrrr/DataStructure/tree/master/Demo/03_Stack_Queue/01_Stack) |                             |                                                              |
-|                 | [数制转换]()                                                 |                             |                                                              |
+|                 | [数制转换](https://github.com/hairrrrr/DataStructure/tree/master/Demo/03_Stack_Queue/02_Number_System_Conversion) |                             |                                                              |
 
 
 
