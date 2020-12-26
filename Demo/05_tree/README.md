@@ -27,7 +27,7 @@
 
 4. 具有 `n` 个结点的完全二叉树的深度为 
 
-   ![](https://www.hairrrrr.github.io/assets/2020-12-24-1.png)
+   ![](https://hairrrrr.github.io/assets/2020-12-24-1.png)
 
 5. 
 
@@ -39,7 +39,9 @@
 
 书中采用前序遍历构建二叉树：
 
-![](https://www.hairrrrr.github.io/assets/2020-12-24-2.png)
+![](https://hairrrrr.github.io/assets/2020-12-24-2.png)
+
+
 
 
 

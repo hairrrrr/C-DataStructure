@@ -38,7 +38,7 @@ S.nodes[k].parent > 0
 
 #### 示例
 
-![](https://www.hairrrrr.github.io/assets/2020-12-24-3.png)
+![](https://hairrrrr.github.io/assets/2020-12-24-3.png)
 
 
 
